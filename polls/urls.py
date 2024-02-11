@@ -1,7 +1,7 @@
 from django.urls import path
-
-from . import views
+from .views import item_list
 
 urlpatterns = [
-    path("", views.index, name="index"),
+    path('item-list/', item_list, name='item_list'),
+    # Add other paths as needed
 ]

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Slaves</title>
+</head>
+<body>
+    <h2>Slaves</h2>
+
+    <form method="get" action="{% url 'item_list' %}">
+        {{ form.as_p }}
+        <button type="submit">Search</button>
+    </form>
+
+    <ul>
+        {% for item in items %}
+            <li>{{ item.name }} - {{ item.description }}</li>
+        {% empty %}
+            <li>No items found.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
