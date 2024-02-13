@@ -16,5 +16,8 @@ def item_list(request):
     return render(request, 'item_list.html', {'items': items, 'form': form})
 
 
-def index_view(request):
-    return render(request, 'index.html')
+
+
+
+def yyyy_view(request):
+    return render(request, 'yyyy.html')
